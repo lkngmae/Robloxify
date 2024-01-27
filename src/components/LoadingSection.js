@@ -6,7 +6,10 @@ import './LoadingSection.css';
 
 function LoadingSection() {
   return (
-    <h1>loading so wait</h1>
+    <div className='loadingContaine'>
+        <h1>loading so wait</h1>
+    </div>
+    
   );
 }
 
