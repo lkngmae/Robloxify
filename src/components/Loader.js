@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import LoadingSection from './LoadingSection';
+import { Navigate } from 'react-router-dom';
 /*Determines whether to return the loader screen*/
 
 function Loader() {
@@ -17,9 +18,7 @@ function Loader() {
     }
 
     return (
-    <div>
-        <h1>soon this will be a link to a data page</h1>
-    </div>
+        <Navigate to='/results-page' />
     );
 }
 

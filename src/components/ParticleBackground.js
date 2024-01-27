@@ -6,6 +6,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 // import { loadSlim } from "@tsparticles/slim"; 
+//import { loadImageShape } from "tsparticles-shape-image";
 
 function ParticleBackground(){
   const [init, setInit] = React.useState(false);
@@ -20,6 +21,7 @@ function ParticleBackground(){
       //await loadFull(engine);
       //  await loadSlim(engine);
       await loadBasic(engine);
+      //await loadImageShape(engine);
     }).then(() => {
       setInit(true);
     });
@@ -60,6 +62,7 @@ function ParticleBackground(){
         color: {
           value: "#ffffff",
         },
+        
         links: {
           color: "#ffffff",
           distance: 150,
@@ -67,6 +70,7 @@ function ParticleBackground(){
           opacity: 0.5,
           width: 1,
         },
+        
         move: {
           direction: "none",
           enable: true,
@@ -88,12 +92,20 @@ function ParticleBackground(){
         },
         shape: {
           type: "circle",
+          // type: "image",
+          // image:{
+          //   //src: "../components/images/roblox-character.jpg",
+          //   //src: "https://ih1.redbubble.net/image.5070489824.0275/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
+          //   src:
+          //     "https://www.pngall.com/wp-content/uploads/10/Binance-Coin-Crypto-Logo-PNG-Background.png"
+            
+          // }
         },
         size: {
           value: { min: 1, max: 5 },
         },
       },
-      detectRetina: true,
+      //detectRetina: true,
     }),
     [],
   );
