@@ -8,13 +8,13 @@ function HeroSection() {
   return (
     <div className='hero-container'>
         {/*<video src='/Home page back.mp4' autoPlay loop muted />*/}
-        <h1>ROBLOX NAME GENERATOR</h1>
+        <h1>Robloc Name<br/>GENERATOR</h1>
         
         <p>Stuck on creating a name for your Roblox game? Check out our name generator!</p>
 
         <div className="hero-btns">
             <Button 
-              link="/form"
+              link="/form-page"
                 className='btns' 
                 buttonStyle='btn--primary'
                 buttonSize='btn--large'

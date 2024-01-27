@@ -1,5 +1,8 @@
-import React, { Component } from 'react'
-import '../../App.css'
+import React, { Component, useEffect } from 'react'
+import '../App.css'
+import './Form.css'
+import  { Button } from './Button';
+
 /*import Map from '../Map';*/
 
 
@@ -20,11 +23,13 @@ export default function Form() {
 
 
   return (
-    <form onSubmit={handleSubmit}>
-        <h1>Genre</h1>
-    <div className = 'form-container'> 
+    <div className = 'form-container' id="particles-js"> 
+      
+      <form onSubmit={handleSubmit}>
+        <h1>Tell Us About<br/>Your Game</h1>
+  
         <label>
-            Genre:
+            Genre
             <select
             name="genre"
             value={genre}
@@ -39,7 +44,7 @@ export default function Form() {
     
       
         <label>
-            Description:
+            Description
             <input
             name="description"
             type="description"
@@ -47,11 +52,12 @@ export default function Form() {
             onChange={e => setDescription(e.target.value)}
             required />
         </label>
-    </div>
+    
     
 
 
-      <button>Submit</button>
-    </form>
+        <Button>Submit</Button>
+      </form>
+    </div>
   );
 }

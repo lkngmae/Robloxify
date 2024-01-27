@@ -1,0 +1,61 @@
+.form-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #1e1433;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    
+    padding: 80px;
+    padding-top: 60px;
+    object-fit: contain;
+}
+
+.form-container h1 {
+    color: #15dae6;
+    font-size: 70px;
+    font-family: 'Pixelify Sans';
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    object-fit: contain;
+    color: #15dae6;
+    font-size: 20px;
+    font-family: 'JetBrains Mono'; 
+    padding-bottom: 20px;
+}
+
+select{
+    background-color: transparent;
+    color: #15dae6;
+    padding: 3px 10px;
+    border: 1px solid #15dae6;
+    border-radius: 30;
+    font-size: 15px;
+    font-family: 'JetBrains Mono', monospace;
+    width: 17%;
+}
+
+option{
+    color: #1e1433;
+    font-size: 15px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+input{
+    background-color: transparent;
+    color: #15dae6;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 8px 20px;
+    border: 1px solid #15dae6;
+    border-radius: 30;
+    height: 50px;
+    width: 60%;
+}
