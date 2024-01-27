@@ -14,7 +14,7 @@ function HeroSection() {
 
         <div className="hero-btns">
             <Button 
-              link="/sign-up"
+              link="/form"
                 className='btns' 
                 buttonStyle='btn--primary'
                 buttonSize='btn--large'

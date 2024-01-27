@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from '../src/components/pages/Home';
 import Services from '../src/components/pages/Services';
-import SignUp from '../src/components/pages/SignUp';
+import Form from './components/pages/Form';
 import ToDo from './components/pages/ToDo';
 
 
@@ -19,7 +19,7 @@ function App() {
         <Route path='/' element={<Home />} exact />
         <Route path='/services' element={<Services/>} exact />
         <Route path='/map/:location' element={<ToDo />}  />
-        <Route path='/sign-up' element={<SignUp/>} exact />
+        <Route path='/form' element={<Form />} exact />
       </Routes>
     </Router>
      
