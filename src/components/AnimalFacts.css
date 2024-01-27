@@ -1,0 +1,13 @@
+p{
+
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+.btn{
+    margin-top: 20px;
+}
