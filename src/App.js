@@ -6,6 +6,7 @@ import Home from '../src/components/pages/Home';
 import Services from '../src/components/pages/Services';
 import FormPage from '../src/components/pages/FormPage';
 import ToDo from './components/pages/ToDo';
+import LoadingScreen from './components/pages/LoadingScreen';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/services' element={<Services/>} exact />
         <Route path='/map/:location' element={<ToDo />}  />
         <Route path='/form-page' element={<FormPage />} exact />
+        <Route path='/loading-screen' element={<LoadingScreen />} exact />
       </Routes>
     </Router>
      

@@ -53,10 +53,10 @@ export default function Form() {
             required />
         </label>
     
-    
 
 
-        <Button>Submit</Button>
+        <Button link="/loading-screen">Submit</Button>
+
       </form>
     </div>
   );
