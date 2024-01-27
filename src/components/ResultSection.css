@@ -1,0 +1,16 @@
+.result-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #1e1433;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.result-container h1{
+    color: #15dae6;
+    font-size: 100px;
+    font-family: 'Pixelify Sans';
+}

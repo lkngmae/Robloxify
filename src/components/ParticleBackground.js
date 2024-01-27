@@ -1,6 +1,6 @@
 
-import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
-//import { loadSlim } from "@tsparticles/slim";
+// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
+import { loadSlim } from "@tsparticles/slim";
 import React from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
@@ -19,8 +19,8 @@ function ParticleBackground(){
       // starting from v2 you can add only the features you need reducing the bundle size
       //await loadAll(engine);
       //await loadFull(engine);
-      //  await loadSlim(engine);
-      await loadBasic(engine);
+       await loadSlim(engine);
+      //await loadBasic(engine);
       //await loadImageShape(engine);
     }).then(() => {
       setInit(true);
