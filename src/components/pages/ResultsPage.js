@@ -14,6 +14,7 @@ import KermitDarth from '../KermitDarth';
 import Rick from '../Rick';
 import Steve from '../../Steve';
 import Cattank from '../../Cattank';
+import Ucat from '../../Ucat';
 
 
 export default function ResultsPage({response, setResponse}) {
@@ -22,13 +23,13 @@ export default function ResultsPage({response, setResponse}) {
 
     let model;
     switch(state.genreState){
-        case 'Sci-Fi':
-            model = <Mike />
+        case 'Sci-Fi'://nope
+            model = <Ucat />
             break;
         case 'Comedy':
             model = <Pandahead />
             break;
-        case 'Horror':
+        case 'Horror'://nope
             model = <KermitDarth />
             break;
         case 'Adventure':
