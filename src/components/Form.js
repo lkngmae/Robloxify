@@ -20,7 +20,7 @@ export default function Form({response, setResponse}) {
   const genres = ["All Genres", "Adventure", "Fighting", "RPG", "Town and City", "Horror", "Building", "FPS", "Military", 
                 "Naval", "Sports", "Comedy", "Sci-Fi"]
   const navigate = useNavigate();    
-
+  
   const handleSubmit = (data) => {
     console.log(`
       Genre: ${genre}
@@ -42,7 +42,7 @@ export default function Form({response, setResponse}) {
       .then((response) => {
         setResponse(response);
         console.log(response.data.predictions[0].content)
-        navigate('/results-page');
+        navigate('/results-page', { state: {genreState:`${genre}`}}); //genrestate to be sent to results
       });
       
     };

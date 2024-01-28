@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rick (Rick and Morty)
+* source:	https://sketchfab.com/3d-models/rick-rick-and-morty-3c0928c16ddd4e61ab23d0b141648ed4
+* author:	DavidA3D (https://sketchfab.com/DavidA3D)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rick (Rick and Morty)" (https://sketchfab.com/3d-models/rick-rick-and-morty-3c0928c16ddd4e61ab23d0b141648ed4) by DavidA3D (https://sketchfab.com/DavidA3D) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

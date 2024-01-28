@@ -6,9 +6,43 @@ import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 import Toothless  from '../Toothless';
+import Mike from '../Mike';
 import './ResultsPage.css';
+import { useLocation } from "react-router";
+import Pandahead from '../Pandahead';
+import KermitDarth from '../KermitDarth';
+import Rick from '../Rick';
+import Steve from '../../Steve';
+import Cattank from '../../Cattank';
+
 
 export default function ResultsPage({response, setResponse}) {
+    const { state } = useLocation(); //refers the the link
+    console.log(state.genreState)
+
+    let model;
+    switch(state.genreState){
+        case 'Sci-Fi':
+            model = <Mike />
+            break;
+        case 'Comedy':
+            model = <Pandahead />
+            break;
+        case 'Horror':
+            model = <KermitDarth />
+            break;
+        case 'Adventure':
+            model = <Rick />
+            break;
+        case 'Building':
+            model = <Steve />
+            break;
+        case 'Military':
+            model = <Cattank />
+            break;
+        default: 
+            model = <Toothless />
+    }
     return(
         // <h1 className='results'>RESULTS</h1>
         <>
@@ -16,7 +50,7 @@ export default function ResultsPage({response, setResponse}) {
             <div className='results-container'>
                 <Canvas className = 'canvas'>
                     <Suspense fallback={null}>
-                    <Toothless />
+                    {model}
                     <OrbitControls />
                     </Suspense>
                 </Canvas>

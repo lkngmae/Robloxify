@@ -7,12 +7,12 @@ License: CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 Source: https://sketchfab.com/3d-models/free-rigged-toothless-meme-193ce9edac9c4576a6131ff7d588ec2b
 Title: free rigged toothless meme
 */
-
+//Use: npx gltfjsx scene.gltf --transform
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Toothless(props) {
-  const { nodes, materials } = useGLTF('/scene-transformed.glb')
+  const { nodes, materials } = useGLTF('/Toothless/scene-transformed.glb')
   return (
     <group {...props} dispose={null}>
       <primitive object={nodes.GLTF_created_0_rootJoint} />
@@ -40,4 +40,4 @@ export default function Toothless(props) {
   )
 }
 
-useGLTF.preload('/scene-transformed.glb')
+useGLTF.preload('/Toothless/scene-transformed.glb')
