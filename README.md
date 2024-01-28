@@ -12,7 +12,7 @@ In a Deepnote notebook, we filtered the Roblox Kaggle dataset of the most popula
 Afterwards, we deployed the fine-tuned model and called it using Google’s built-in REST API for Vertex AI. We called this REST API in our frontend, where we randomly generated a 3D meme based on user-inputted descriptions and genres, and the response from the AI.
 
 ### Frontend
-We developed the frontend using ReactJS, HTML, and CSS. We used particleJS for our mouse-sensitive particles in the background and React Three Fiber for our interactive 3D meme models. We also used Google’s built-in REST API for Vertex AI to send the description and genre, and retrieve a game title. 
+We developed the frontend using ReactJS, HTML, and CSS to make our website interactive and have a responsive design. We used particleJS for our mouse-sensitive particles in the background and React Three Fiber for our interactive 3D meme models. We also used Google’s built-in REST API for Vertex AI to send the description and genre, and retrieve a game title. 
 
 ## Challenges we ran into
 We ran into several challenges during these parts of our project:
