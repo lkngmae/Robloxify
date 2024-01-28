@@ -5,6 +5,8 @@ import './Form.css'
 import { useNavigate } from 'react-router-dom';
 import  { Button } from './Button';
 
+import Typewriter from "typewriter-effect";
+
 /*import Map from '../Map';*/
 
 const baseURL = "https://us-west1-aiplatform.googleapis.com/v1/projects/1035964768729/locations/us-west1/endpoints/4984701935220162560:predict";
@@ -51,7 +53,22 @@ export default function Form({response, setResponse}) {
     <div className = 'form-container' id="particles-js"> 
       
       <form onSubmit={handleSubmit}>
-        <h1>Tell Us About<br/>Your Game</h1>
+        <div className='typing-text'>
+          <Typewriter
+            // options={{
+            //   strings: ['Tell Us About\nYour Game'],
+            //   autoStart: true,
+            // }}
+            onInit={(typewriter) => {
+              typewriter.typeString('Tell Us About<br/>Your Game')
+                .callFunction(() => {
+                  console.log('String typed out!');
+                })
+                .stop()
+                .start();
+            }}
+          />
+        </div>
   
         <label>
             Genre

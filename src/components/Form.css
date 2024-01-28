@@ -12,7 +12,7 @@
     object-fit: contain;
 }
 
-.form-container h1 {
+.form-container .typing-text {
     color: #15dae6;
     font-size: 70px;
     font-family: 'Pixelify Sans';
@@ -61,7 +61,7 @@ input{
 }
 
 @media screen and (max-width: 850px) {
-    .form-container h1 {
+    .form-container .typing-text {
         font-size: 55px;
         padding-bottom: 20px;
     }
