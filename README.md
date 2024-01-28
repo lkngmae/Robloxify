@@ -1,74 +1,39 @@
-Use react leaflet for map
-https://learn.ryqn.dev/article/how-to-use-fonts for fonts
+## Inspiration
+While we were generating ideas for our project, we decided to explore datasets related to the Hackathon sponsors. We came across a dataset of Roblox game data, including game descriptions, titles, genres, and popularity metrics.  
+Inspired by this dataset, we decided to create our Roblox game title generator!
 
-Tutorial Video followed: https://www.youtube.com/watch?v=I2UBjN5ER4s 
-# Getting Started with Create React App
+## What it does
+The website prompts the user to select a genre for their Roblox game and enter a description (can be a brain dump!). Then the user-specified genre and description are sent to our fine-tuned Vertex AI model hosted on Google Cloud, which generates the game title. The website then displays that title! As the user navigates with the website, they come across various mouse-sensitive particles and 3D memes that they can drag around, spin, and interact with!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How we built it
+### Backend
+In a Deepnote notebook, we filtered the Roblox Kaggle dataset of the most popular games with over 100,000 entries using Pandas, then we took that dataset put it into a Google Cloud bucket storage, and used that bucket to fine-tune the PaLM 2 large language model using the Google Cloud Vertex AI SDK for Python.
 
-## Available Scripts
+Afterwards, we deployed the fine-tuned model and called it using Google’s built-in REST API for Vertex AI. We called this REST API in our frontend, where we randomly generated a 3D meme based on user-inputted descriptions and genres, and the response from the AI.
 
-In the project directory, you can run:
+### Frontend
+We developed the frontend using ReactJS, HTML, and CSS. We used particleJS for our mouse-sensitive particles in the background and React Three Fiber for our interactive 3D meme models. We also used Google’s built-in REST API for Vertex AI to send the description and genre, and retrieve a game title. 
 
-### `npm start`
+## Challenges we ran into
+We ran into several challenges during these parts of our project:
+1. Training and deploying our model on Google Cloud took a while
+2. Errors with dataset storage permissions (dataset was not properly configured)
+2. Rendering our 3D memes
+3. Layering of elements on our website
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Accomplishments that we're proud of
+- Everything is functional!!!
+- The fine-tuned model is able to give more suitable titles than a pre-trained one (we compared against GPT 3.5)
+- Our 3D memes render nicely, and the particles work really well
+- Great color scheme and appearance of the frontend!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## What we learned
+- How to deploy and train models on Google Cloud
+- Enhanced our proficiency with React
+- Learned how to use external libraries like R3F and ParticleJS to make complicated graphics
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What's next for Robloxify: Memes Unleashed
+- Train our model further so that it includes emojis in the title
+- Minor improvements on the frontend
+- Deploying the website to Netlify and integrating Google OAuth so that other people can use our website!
+- Adding attributions to the 3D model creators on our website
