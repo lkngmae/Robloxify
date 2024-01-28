@@ -1,6 +1,7 @@
 import React from 'react';
 import './Button.css'
 import { Link } from 'react-router-dom';
+import { useGlitch } from 'react-powerglitch'
 
 //primary is filled in, outline is just an outline around button 
 const STYLES = ['btn--primary', 'btn--outline'];
@@ -21,16 +22,18 @@ export const Button = ({
         : STYLES[0];
 
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
-
+    const glitch = useGlitch({ 'playMode?': 'hover' });
+    
     return (
         <Link to={link} className='btn-mobile'>
           <button
+            ref={glitch.ref}
             className={`btn ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onClick}
             type={type}
           >
-            {children}
+              {children}
           </button>
         </Link>
     );
-};
+  }
