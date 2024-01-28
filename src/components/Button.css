@@ -13,7 +13,8 @@
 
 .btn--primary {
     background-color: #ec3d21;
-    font-family: 'Pixelify Sans';
+    font-family:'Source Code Pro', monospace;
+    font-weight: bold;
     color: #1e1433;
     /*border: 1px solid var(--primary);*/
 }
@@ -45,7 +46,7 @@
 }
 
 .btn--medium:hover, .btn--large:hover {
-    background: #d59666;
-    color: #d8f0fa;
+    background: #15dae6;
+    color: #1e1433;
     transition: all 0.3s ease-out;
 }

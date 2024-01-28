@@ -26,7 +26,6 @@ export default function Form({response, setResponse}) {
       Genre: ${genre}
       Description: ${description}
     `);
-
     const userData = {
       "instances": [
         {"prompt": `Generate a catchy title for the game Roblox based on the following description and genre: Genre: ${genre} Description: ${description}.`}

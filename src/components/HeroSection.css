@@ -19,6 +19,7 @@ video {
     justify-content: center;
     align-items: center;
     object-fit: contain;
+    padding: 100px;
     
 }
 
@@ -29,16 +30,25 @@ video {
     margin-top: 50px;
     text-align: center;
 }
+.hero-container > h2 {
+    color: #15dae6;
+    font-size: 50px;
+    font-family: 'Iceland', sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
 .hero-container > p {
-    margin-top: 20px;
+    margin-top: 15px;
     color: #ec3d21;
     font-size: 22px;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: normal;
 }
 
 .hero-btns {
@@ -56,27 +66,28 @@ video {
 
 @media screen and (max-width:960px) {
     .hero-container > h1 {
-        font-size: 70px;
-        margin-top: -20px
+        font-size: 40px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .hero-container{
+        padding: 20px;
+    }
     .hero-container > h1 {
         font-size: 70px;
         margin-top: 10px
     }
+    .hero-container > h2 {
+        font-size: 50px;
+        margin-top: 10px
+    }
 
     .hero-container > p {
-        font-size: 30px;
+        font-size: 20px;
     }
 
-    .btn-mobile {
-        display: block;
-        text-decoration: none;
-    }
-
-    .btn {
-        width: 100%;
+    .hero-btns {
+        margin-top: 20px;
     }
 }

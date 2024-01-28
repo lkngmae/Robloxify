@@ -85,29 +85,13 @@ function ParticleBackground(){
           density: {
             enable: true,
           },
-          value: 30,
+          value: 20,
         },
         opacity: {
           value: 0.5,
         },
         shape: {
           type: "circle",
-          // type: "image",
-          // image:{
-          //   //src: "../components/images/roblox-character.jpg",
-          //   //src: "https://ih1.redbubble.net/image.5070489824.0275/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
-          //   src:
-          //     "https://www.pngall.com/wp-content/uploads/10/Binance-Coin-Crypto-Logo-PNG-Background.png"
-            
-          // }
-          // "image": {
-          //   "src": "https://www.pngall.com/wp-content/uploads/10/Binance-Coin-Crypto-Logo-PNG-Background.png",
-          //   // "width": 100,
-          //   // "height": 100
-          // },
-          // size: {
-          //   value: { min: 10, max: 25 }
-          // }
 
         },
         size: {

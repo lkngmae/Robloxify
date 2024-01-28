@@ -2,15 +2,34 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    background-color: #1e1433;
+    background-color: transparent;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     object-fit: contain;
 }
 
 .result-container h1{
     color: #15dae6;
-    font-size: 70px;
+    font-size: 50px;
+    text-align: left;
     font-family: 'JetBrains Mono';
+}
+
+.result-container p{
+    color: #15dae6;
+    font-size: 40px;
+    text-align: left;
+    align-items: left;
+    font-family: 'JetBrains Mono';
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    .result-container h1{
+        font-size: 30px;
+    }
+    .result-container p{
+        font-size: 15px;
+    }
 }

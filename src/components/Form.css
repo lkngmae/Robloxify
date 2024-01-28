@@ -40,7 +40,7 @@ select{
     border-radius: 30;
     font-size: 15px;
     font-family: 'JetBrains Mono', monospace;
-    width: 17%;
+    width: 170px;
 }
 
 option{
@@ -57,5 +57,20 @@ input{
     border: 1px solid #15dae6;
     border-radius: 30;
     height: 50px;
-    width: 60%;
+    width: 80%;
+}
+
+@media screen and (max-width: 850px) {
+    .form-container h1 {
+        font-size: 55px;
+        padding-bottom: 20px;
+    }
+
+    label{
+        padding-bottom: 15px;
+    }
+
+    Button{
+        padding-top: 0px;
+    }
 }
