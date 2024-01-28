@@ -7,29 +7,40 @@
     justify-content: left;
     align-items: left;
     object-fit: contain;
+    padding: 50px;
+    padding-left: 100px;
 }
 
 .result-container h1{
     color: #15dae6;
-    font-size: 50px;
+    font-size: 45px;
     text-align: left;
     font-family: 'JetBrains Mono';
+    
 }
 
 .result-container p{
     color: #15dae6;
-    font-size: 40px;
+    font-size: 35px;
     text-align: left;
     align-items: left;
     font-family: 'JetBrains Mono';
     font-style: italic;
+    margin-top: 30px;
+    margin-left: -23px;
 }
 
+
 @media screen and (max-width: 768px) {
+    .result-container{
+        display: block;
+        padding-left: 50px;
+    }
     .result-container h1{
         font-size: 30px;
     }
     .result-container p{
         font-size: 15px;
+        margin-left: -200px;
     }
 }

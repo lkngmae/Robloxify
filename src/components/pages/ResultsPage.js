@@ -6,7 +6,6 @@ import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 import Toothless  from '../Toothless';
-import Mike from '../Mike';
 import './ResultsPage.css';
 import { useLocation } from "react-router";
 import Pandahead from '../Pandahead';
@@ -49,13 +48,13 @@ export default function ResultsPage({response, setResponse}) {
         <>
             <ParticleBackground />
             <div className='results-container'>
+                <ResultSection className = 'results-section' response={response} setResponse={setResponse}/>
                 <Canvas className = 'canvas'>
                     <Suspense fallback={null}>
                     {model}
                     <OrbitControls />
                     </Suspense>
                 </Canvas>
-                <ResultSection className = 'results-section' response={response} setResponse={setResponse}/>
                 
             </div>
             

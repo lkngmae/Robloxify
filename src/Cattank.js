@@ -22,6 +22,7 @@ export default function Cattank(props) {
         <group name="Root" rotation={[-Math.PI / 2, 0, 0]} scale={1.433}>
           <group name="Cylinder" position={[0.039, 0.16, -0.24]} scale={1.508}>
             <ambientLight intensity={3} />
+            <pointLight position={[10, 10, 10]} />
             <mesh name="Cylinder_0" geometry={nodes.Cylinder_0.geometry} material={materials['grumpy-cat-6-690x690']} />
           </group>
         </group>
