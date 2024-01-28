@@ -7,14 +7,14 @@ function Loader() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-    // Simulate an API call
+    // Post Axios request 
     setTimeout(() => {
         setIsLoading(false);
     }, 2000);
     }, []);
 
     if (isLoading) {
-    return <LoadingSection />;
+        return <LoadingSection />;
     }
 
     return (

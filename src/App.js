@@ -10,7 +10,10 @@ import LoadingScreen from './components/pages/LoadingScreen';
 
 
 
+
 function App() {
+  const [response, setResponse] = React.useState(null);
+
   console.log("Made it to APP!");
   return (
     <>
@@ -18,9 +21,9 @@ function App() {
       {/*<Navbar />*/}
       <Routes>
         <Route path='/' element={<Home />} exact />
-        <Route path='/results-page' element={<ResultsPage/>} exact />
+        <Route path='/results-page' element={<ResultsPage response={response} setResponse={setResponse}/>} exact />
         <Route path='/map/:location' element={<ToDo />}  />
-        <Route path='/form-page' element={<FormPage />} exact />
+        <Route path='/form-page' element={<FormPage response={response} setResponse={setResponse}/>} exact />
         <Route path='/loading-screen' element={<LoadingScreen />} exact />
       </Routes>
     </Router>

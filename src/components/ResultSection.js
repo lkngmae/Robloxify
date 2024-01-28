@@ -3,10 +3,11 @@ import '../App.css';
 import './ResultSection.css'
 
 
-function ResultSection() {
+function ResultSection({response, setResponse}) {
+  //get request
     return (
       <div className='result-container'>
-          <h1>Results! </h1>
+          <h1>{response.data.predictions[0].content}</h1>
       </div>
       
     );

@@ -3,11 +3,11 @@ import '../../App.css';
 import Form from '../Form';
 import ParticleBackground from '../ParticleBackground';
 
-function FormPage() {
+function FormPage({response, setResponse}) {
     console.log("Made it to form!");
     return (
         <>
-            <Form />
+            <Form response={response} setResponse={setResponse}/>
             <ParticleBackground />
         </>
     );

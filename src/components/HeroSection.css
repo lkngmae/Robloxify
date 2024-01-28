@@ -27,6 +27,7 @@ video {
     font-size: 100px;
     font-family: 'Pixelify Sans';
     margin-top: 50px;
+    text-align: center;
 }
 
 .hero-container > p {
