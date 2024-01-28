@@ -14,6 +14,7 @@ import Rick from '../Rick';
 import Steve from '../../Steve';
 import Cattank from '../../Cattank';
 import Ucat from '../../Ucat';
+import Goose from '../../Goose';
 
 
 export default function ResultsPage({response, setResponse}) {
@@ -38,7 +39,7 @@ export default function ResultsPage({response, setResponse}) {
             model = <Steve />
             break;
         case 'Military':
-            model = <Cattank />
+            model = <Goose />
             break;
         default: 
             model = <Toothless />

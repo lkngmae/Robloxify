@@ -1,0 +1,11 @@
+Model Information:
+* title:	goose with knife
+* source:	https://sketchfab.com/3d-models/goose-with-knife-fdc0d2f24a4c422dba503f2b9f445e24
+* author:	Bianca.Popa (https://sketchfab.com/Bianca.Popa)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "goose with knife" (https://sketchfab.com/3d-models/goose-with-knife-fdc0d2f24a4c422dba503f2b9f445e24) by Bianca.Popa (https://sketchfab.com/Bianca.Popa) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

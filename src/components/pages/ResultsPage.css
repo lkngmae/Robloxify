@@ -4,12 +4,14 @@
     background-color: #1e1433;
     
 }
-.canvas{
+.results-container .canvas{
     flex: 1;
     background-color: transparent;
     position: 'fixed';
     float: 'left';
+    height: 50vh;
 }
+
 .results-section{
     /* padding: 50px;
     margin: 30px; */

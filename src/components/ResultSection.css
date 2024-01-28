@@ -33,6 +33,7 @@
 
 @media screen and (max-width: 768px) {
     .result-container{
+        height: 20vh;
         display: block;
         padding-left: 50px;
     }
