@@ -1,4 +1,4 @@
-[![Robloxify Video](https://img.youtube.com/vi/BLdMJY_RBD8/0.jpg)](https://www.youtube.com/watch?v=BLdMJY_RBD8)
+[![Robloxify Video](https://img.youtube.com/vi/BLdMJY_RBD8/maxresdefault.jpg)](https://www.youtube.com/watch?v=BLdMJY_RBD8)
 ## Inspiration
 While we were generating ideas for our project, we decided to explore datasets related to the Hackathon sponsors. We came across a dataset of Roblox game data, including game descriptions, titles, genres, and popularity metrics.  
 Inspired by this dataset, we decided to create our Roblox game title generator!
